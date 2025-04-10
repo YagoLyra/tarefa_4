@@ -1,0 +1,12 @@
+{{#with produto}}
+  <div class="produto_page">
+    <h2 id="produto_title">{{this.nome}}</h2>
+    <img
+      id="produto_img"
+      src="{{this.imagem}}"
+      alt="Imagem do produto {{this.nome}}"
+    />
+    <p>{{this.descricao}}</p>
+    <p>R${{this.preco}}</p>
+  </div>
+{{/with}}

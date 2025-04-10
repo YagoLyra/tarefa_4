@@ -1,0 +1,14 @@
+<div class="header">
+  <h1 id="title">Bem-vindo ao nosso site!</h1>
+  <p id="title_desc">Aqui você encontra uma variedade de produtos.</p>
+</div>
+<div class="produtos">
+  {{#each produtos}}
+    <div class="produto">
+      <h2>{{this.nome}}</h2>
+      <img src="{{this.imagem}}" alt="Imagem do produto {{this.nome}}" />
+      <p>R${{this.preco}}</p>
+      <a id="see_more" href="/produtos/{{this.id}}">Veja Mais</a>
+    </div>
+  {{/each}}
+</div>
